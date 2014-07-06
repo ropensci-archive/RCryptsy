@@ -6,7 +6,7 @@
 GeneralMarketData_LTCBTC()
 }
 \description{
-This function allows you get general market data on Litecoin to BITCOIN
+This function allows you to get general market data on Litecoin to BITCOIN.
 }
 \examples{
 GeneralMarketData_LTCBTC()

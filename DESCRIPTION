@@ -1,6 +1,6 @@
 Package: RCryptsy
 Type: Package
-Title: Access to Cryptsy Crypto-Currency Exchange Public Infomation API via R
+Title: Access to Cryptsy Crypto-Currency Exchange Public Information API via R
 Version: 0.1
 Date: 2014-07-05
 Author: William Kyle Hamilton <kyle.hamilton@gmail.com>

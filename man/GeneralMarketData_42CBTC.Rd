@@ -6,7 +6,7 @@
 GeneralMarketData_42CBTC()
 }
 \description{
-This function allows you get general market data on 42coin to BITCOIN
+This function allows you to get general market data on 42coin to BITCOIN.
 }
 \examples{
 GeneralMarketData_42CBTC()
