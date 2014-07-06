@@ -8,7 +8,7 @@ GeneralMarketDataAll <- function () {
 
 #' DOGECOIN to USD
 #'
-#' This function allows you get general market data on Dogecoin to US Dollars
+#' This function allows you to get general market data on Dogecoin to US Dollars
 #' @param DOGECOIN to USD - Realtime
 #' @keywords doge
 #' @export
@@ -26,7 +26,7 @@ GeneralMarketData_DOGEUSD <- function () {
 
 #' BITCOIN to USD
 #'
-#' This function allows you get general market data on Bitcoin to US Dollars
+#' This function allows you to get general market data on Bitcoin to US Dollars
 #' @param BITCOIN to USD - Realtime
 #' @keywords bitcoin
 #' @export
@@ -43,7 +43,7 @@ GeneralMarketData_BTCUSD <- function () {
 
 #' Feathercoin to USD
 #'
-#' This function allows you get general market data on Feathercoin to US Dollars
+#' This function allows you to get general market data on Feathercoin to US Dollars
 #' @param FEATHERCOIN to USD - Realtime
 #' @keywords feathercoin
 #' @export
@@ -60,7 +60,7 @@ GeneralMarketData_FTCUSD <- function () {
 
 #' Litecoin to USD
 #'
-#' This function allows you get general market data on Litecoin to US Dollars
+#' This function allows you to get general market data on Litecoin to US Dollars
 #' @param LITECOIN to USD - Realtime
 #' @keywords litecoin
 #' @export
@@ -77,7 +77,7 @@ GeneralMarketData_LTCUSD <- function () {
 
 #' Darkcoin to USD
 #'
-#' This function allows you get general market data on Darkcoin to US Dollars
+#' This function allows you to get general market data on Darkcoin to US Dollars
 #' @param DARKCOIN to USD - Realtime
 #' @keywords Darkcoin
 #' @export
@@ -94,7 +94,7 @@ GeneralMarketData_DRKUSD <- function () {
 
 #' Dogecoin to Bitcoin
 #'
-#' This function allows you get general market data on Dogecoin to BITCOIN
+#' This function allows you to get general market data on Dogecoin to BITCOIN
 #' @param DOGECOIN to BTC - Realtime
 #' @keywords Dogecoin
 #' @export
@@ -111,7 +111,7 @@ GeneralMarketData_DOGEBTC <- function () {
 
 #' Darkcoin to Bitcoin
 #'
-#' This function allows you get general market data on Darkcoin to BITCOIN
+#' This function allows you to get general market data on Darkcoin to BITCOIN
 #' @param DARKCOIN to BTC - Realtime
 #' @keywords Darkcoin
 #' @export
@@ -128,7 +128,7 @@ GeneralMarketData_DRKBTC <- function () {
 
 #' Feathercoin to Bitcoin
 #'
-#' This function allows you get general market data on Feathercoin to BITCOIN
+#' This function allows you to get general market data on Feathercoin to BITCOIN
 #' @param FEATHERCOIN to BTC - Realtime
 #' @keywords Feathercoin
 #' @export
@@ -145,7 +145,7 @@ GeneralMarketData_FTCBTC <- function () {
 
 #' Litecoin to Bitcoin
 #'
-#' This function allows you get general market data on Litecoin to BITCOIN
+#' This function allows you to get general market data on Litecoin to BITCOIN
 #' @param LITECOIN to BTC - Realtime
 #' @keywords Litecoin
 #' @export
@@ -162,7 +162,7 @@ GeneralMarketData_LTCBTC <- function () {
 
 #' NXTcoin to Bitcoin
 #'
-#' This function allows you get general market data on NXTcoin to BITCOIN
+#' This function allows you to get general market data on NXTcoin to BITCOIN
 #' @param NXTCOIN to BTC - Realtime
 #' @keywords NXTcoin
 #' @export
@@ -179,7 +179,7 @@ GeneralMarketData_NXTBTC <- function () {
 
 #' 42coin to Bitcoin
 #'
-#' This function allows you get general market data on 42coin to BITCOIN
+#' This function allows you to get general market data on 42coin to BITCOIN
 #' @param 42COIN to BTC - Realtime
 #' @keywords 42coin
 #' @export
@@ -196,7 +196,7 @@ GeneralMarketData_42CBTC <- function () {
 
 #' Dogecoin to Litecoin
 #'
-#' This function allows you get general market data on Dogecoin to LITECOIN
+#' This function allows you to get general market data on Dogecoin to LITECOIN
 #' @param Dogecoin to LTC - Realtime
 #' @keywords Dogecoin
 #' @export
@@ -207,6 +207,108 @@ GeneralMarketData_42CBTC <- function () {
 
 GeneralMarketData_DOGELTC <- function () {
   data <- getURL("http://pubapi.cryptsy.com/api.php?method=singlemarketdata&marketid=135")
+  dataFrame <- RJSONIO::fromJSON(data)
+  return (dataFrame)
+}
+
+#' AndroidsTokensV2  to Litecoin
+#'
+#' This function allows you to get general market data on AndroidsTokensV2 to LITECOIN
+#' @param AndroidsTokensV2  to LTC - Realtime
+#' @keywords AndroidsTokensV2 
+#' @export
+#' @examples
+#' GeneralMarketData_ADTLTC()
+
+#AndroidsTokensV2 to LITECOIN - Realtime
+
+GeneralMarketData_ADTLTC <- function () {
+  data <- getURL("http://pubapi.cryptsy.com/api.php?method=singlemarketdata&marketid=94")
+  dataFrame <- RJSONIO::fromJSON(data)
+  return (dataFrame)
+}
+
+#' AnonCoin  to Litecoin
+#'
+#' This function allows you to get general market data on AnonCoin to LITECOIN
+#' @param AnonCoin  to LTC - Realtime
+#' @keywords AnonCoin 
+#' @export
+#' @examples
+#' GeneralMarketData_ANCLTC()
+
+#AnonCoin to LITECOIN - Realtime
+
+GeneralMarketData_ANCLTC <- function () {
+  data <- getURL("http://pubapi.cryptsy.com/api.php?method=singlemarketdata&marketid=121")
+  dataFrame <- RJSONIO::fromJSON(data)
+  return (dataFrame)
+}
+
+#' AsicCoin   to Litecoin
+#'
+#' This function allows you to get general market data on AsicCoin to LITECOIN
+#' @param AsicCoin  to LTC - Realtime
+#' @keywords AsicCoin  
+#' @export
+#' @examples
+#' GeneralMarketData_ASCLTC()
+
+#AsicCoin  to LITECOIN - Realtime
+
+GeneralMarketData_ASCLTC <- function () {
+  data <- getURL("http://pubapi.cryptsy.com/api.php?method=singlemarketdata&marketid=111")
+  dataFrame <- RJSONIO::fromJSON(data)
+  return (dataFrame)
+}
+
+#' AuroraCoin to Litecoin
+#'
+#' This function allows you to get general market data on AuroraCoin to LITECOIN
+#' @param AuroraCoin to LTC - Realtime
+#' @keywords AuroraCoin   
+#' @export
+#' @examples
+#' GeneralMarketData_AURLTC()
+
+#AuroraCoin  to LITECOIN - Realtime
+
+GeneralMarketData_AURLTC <- function () {
+  data <- getURL("http://pubapi.cryptsy.com/api.php?method=singlemarketdata&marketid=161")
+  dataFrame <- RJSONIO::fromJSON(data)
+  return (dataFrame)
+}
+
+#' BatCoin to Litecoin
+#'
+#' This function allows you to get general market data on BatCoin to LITECOIN
+#' @param BatCoin to LTC - Realtime
+#' @keywords BatCoin  
+#' @export
+#' @examples
+#' GeneralMarketData_BATLTC()
+
+#BatCoin to LITECOIN - Realtime
+
+GeneralMarketData_BATLTC <- function () {
+  data <- getURL("http://pubapi.cryptsy.com/api.php?method=singlemarketdata&marketid=186")
+  dataFrame <- RJSONIO::fromJSON(data)
+  return (dataFrame)
+}
+
+#' BlackCoin to Litecoin
+#'
+#' This function allows you to get general market data on BlackCoin  to LITECOIN
+#' @param BlackCoin to LTC - Realtime
+#' @keywords BlackCoin
+#' @export
+#' @examples
+#' GeneralMarketData_BATLTC()
+
+#BlackCoin  to LITECOIN - Realtime
+
+GeneralMarketData_BCLTC <- function () {
+  data <- getURL("http://pubapi.cryptsy.com/api.php?method=singlemarketdata&marketid=191")
   dataFrame <- RJSONIO::fromJSON(data)
   return (dataFrame)
 }
