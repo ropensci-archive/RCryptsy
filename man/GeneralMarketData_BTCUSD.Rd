@@ -6,7 +6,7 @@
 GeneralMarketData_BTCUSD()
 }
 \description{
-This function allows you to get general market data on Bitcoin to US Dollars.
+This function allows you get general market data on Bitcoin to US Dollars
 }
 \examples{
 GeneralMarketData_BTCUSD()

@@ -6,7 +6,7 @@
 GeneralMarketData_FTCUSD()
 }
 \description{
-This function allows you to get general market data on Feathercoin to US Dollars.
+This function allows you get general market data on Feathercoin to US Dollars
 }
 \examples{
 GeneralMarketData_FTCUSD()

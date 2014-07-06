@@ -6,7 +6,7 @@
 GeneralMarketData_DOGEBTC()
 }
 \description{
-This function allows you to get general market data on Dogecoin to BITCOIN.
+This function allows you get general market data on Dogecoin to BITCOIN
 }
 \examples{
 GeneralMarketData_DOGEBTC()

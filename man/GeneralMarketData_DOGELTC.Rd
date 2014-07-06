@@ -6,7 +6,7 @@
 GeneralMarketData_DOGELTC()
 }
 \description{
-This function allows you to get general market data on Dogecoin to LITECOIN.
+This function allows you get general market data on Dogecoin to LITECOIN
 }
 \examples{
 GeneralMarketData_DOGELTC()

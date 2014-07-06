@@ -6,7 +6,7 @@
 GeneralMarketData_NXTBTC()
 }
 \description{
-This function allows you to get general market data on NXTcoin to BITCOIN.
+This function allows you get general market data on NXTcoin to BITCOIN
 }
 \examples{
 GeneralMarketData_NXTBTC()
