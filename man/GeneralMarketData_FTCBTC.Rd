@@ -5,9 +5,6 @@
 \usage{
 GeneralMarketData_FTCBTC()
 }
-\arguments{
-\item{FEATHERCOIN}{to BTC - Realtime}
-}
 \description{
 This function allows you get general market data on Feathercoin to BITCOIN
 }

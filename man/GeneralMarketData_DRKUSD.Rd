@@ -5,9 +5,6 @@
 \usage{
 GeneralMarketData_DRKUSD()
 }
-\arguments{
-\item{DARKCOIN}{to USD - Realtime}
-}
 \description{
 This function allows you get general market data on Darkcoin to US Dollars
 }

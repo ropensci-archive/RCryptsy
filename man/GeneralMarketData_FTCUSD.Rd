@@ -5,9 +5,6 @@
 \usage{
 GeneralMarketData_FTCUSD()
 }
-\arguments{
-\item{FEATHERCOIN}{to USD - Realtime}
-}
 \description{
 This function allows you get general market data on Feathercoin to US Dollars
 }

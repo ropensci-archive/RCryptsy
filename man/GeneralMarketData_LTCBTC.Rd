@@ -5,9 +5,6 @@
 \usage{
 GeneralMarketData_LTCBTC()
 }
-\arguments{
-\item{LITECOIN}{to BTC - Realtime}
-}
 \description{
 This function allows you get general market data on Litecoin to BITCOIN
 }

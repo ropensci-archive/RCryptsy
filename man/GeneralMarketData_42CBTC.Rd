@@ -5,9 +5,6 @@
 \usage{
 GeneralMarketData_42CBTC()
 }
-\arguments{
-\item{42COIN}{to BTC - Realtime}
-}
 \description{
 This function allows you get general market data on 42coin to BITCOIN
 }

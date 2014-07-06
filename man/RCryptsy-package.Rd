@@ -24,9 +24,4 @@ William Kyle Hamilton
 Maintainer: William Kyle Hamilton <kyle.hamilton@gmail.com>
 }
 
-\keyword{ package }
-
-\examples{
-GeneralMarketDataAll() will gather all the data from all of the markets
-GeneralMarketData_BTCUSD will gather all the data from the Bitcoin US Dollar market
-}
+\keyword{package}

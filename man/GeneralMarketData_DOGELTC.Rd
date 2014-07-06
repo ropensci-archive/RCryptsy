@@ -5,9 +5,6 @@
 \usage{
 GeneralMarketData_DOGELTC()
 }
-\arguments{
-\item{Dogecoin}{to LTC - Realtime}
-}
 \description{
 This function allows you get general market data on Dogecoin to LITECOIN
 }

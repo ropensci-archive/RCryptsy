@@ -5,9 +5,6 @@
 \usage{
 GeneralMarketData_DRKBTC()
 }
-\arguments{
-\item{DARKCOIN}{to BTC - Realtime}
-}
 \description{
 This function allows you get general market data on Darkcoin to BITCOIN
 }

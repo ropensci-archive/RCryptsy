@@ -5,9 +5,6 @@
 \usage{
 GeneralMarketData_DOGEBTC()
 }
-\arguments{
-\item{DOGECOIN}{to BTC - Realtime}
-}
 \description{
 This function allows you get general market data on Dogecoin to BITCOIN
 }

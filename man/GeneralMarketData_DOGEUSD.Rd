@@ -5,9 +5,6 @@
 \usage{
 GeneralMarketData_DOGEUSD()
 }
-\arguments{
-\item{DOGECOIN}{to USD - Realtime}
-}
 \description{
 This function allows you get general market data on Dogecoin to US Dollars
 }

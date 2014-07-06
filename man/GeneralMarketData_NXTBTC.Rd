@@ -5,9 +5,6 @@
 \usage{
 GeneralMarketData_NXTBTC()
 }
-\arguments{
-\item{NXTCOIN}{to BTC - Realtime}
-}
 \description{
 This function allows you get general market data on NXTcoin to BITCOIN
 }

@@ -5,9 +5,6 @@
 \usage{
 GeneralMarketData_LTCUSD()
 }
-\arguments{
-\item{LITECOIN}{to USD - Realtime}
-}
 \description{
 This function allows you get general market data on Litecoin to US Dollars
 }
