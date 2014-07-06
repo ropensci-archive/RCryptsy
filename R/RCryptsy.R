@@ -312,3 +312,38 @@ GeneralMarketData_BCLTC <- function () {
   dataFrame <- RJSONIO::fromJSON(data)
   return (dataFrame)
 }
+
+
+#' CAIx to Litecoin
+#'
+#' This function allows you to get general market data on CAIx to LITECOIN
+#' @param CAIx to LTC - Realtime
+#' @keywords CAIx
+#' @export
+#' @examples
+#' GeneralMarketData_CAIxLTC()
+
+#CAIx  to LITECOIN - Realtime
+
+GeneralMarketData_CAIxLTC <- function () {
+  data <- getURL("http://pubapi.cryptsy.com/api.php?method=singlemarketdata&marketid=222")
+  dataFrame <- RJSONIO::fromJSON(data)
+  return (dataFrame)
+}
+
+#' CryptogenicBullion to Litecoin
+#'
+#' This function allows you to get general market data on CryptogenicBullion to LITECOIN
+#' @param CryptogenicBullion to LTC - Realtime
+#' @keywords CryptogenicBullion
+#' @export
+#' @examples
+#' GeneralMarketData_CGBLTC()
+
+#CryptogenicBullion  to LITECOIN - Realtime
+
+GeneralMarketData_CGBLTC <- function () {
+  data <- getURL("http://pubapi.cryptsy.com/api.php?method=singlemarketdata&marketid=123")
+  dataFrame <- RJSONIO::fromJSON(data)
+  return (dataFrame)
+}
