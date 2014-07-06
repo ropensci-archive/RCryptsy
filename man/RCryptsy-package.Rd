@@ -3,7 +3,7 @@
 \alias{RCryptsy}
 \docType{package}
 \title{
-Access to Cryptsy Crypto-Currency Exchange Public Infomation API via R (RCryptsy)
+Access to the Cryptsy Crypto-Currency Exchange Public Market Information API via R (RCryptsy)
 }
 \description{
 Basic Public API for the Crypto-Currency exchange Cryptsy.
