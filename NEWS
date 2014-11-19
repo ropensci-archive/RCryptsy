@@ -2,7 +2,7 @@
 
 ## SIGNIFICANT USER-VISIBLE CHANGES ##
 
-* Added access to a few markets on the Cryptsy exchange
+* Added access to a few markets on the Cryptsy exchange.
 
 ## BUG FIXES ##
-* Added check to see if user has internet access and if the Cryptsy API service is online
+* Added check to see if user has internet access and if the Cryptsy API service is online.
