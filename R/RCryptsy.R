@@ -110,6 +110,69 @@ GeneralMarketData_DRKUSD <- function () {
   return (dataFrame)
 }
 
+#' Ripple to USD
+#'
+#' This function allows you to get general market data on Ripple to US Dollars
+#' @param Ripple to USD  - Realtime
+#' @keywords Ripple
+#' @export
+#' @examples
+#' GeneralMarketData_XRPUSD()
+
+#Ripple to US Dollars- Realtime
+
+GeneralMarketData_XRPUSD <- function () {
+  internetcheck <- url.exists("http://pubapi.cryptsy.com", timeout = 10)
+  if( internetcheck != TRUE)
+    stop('Cryptsy or your internet connection is down')
+  data <- getURL("http://pubapi.cryptsy.com/api.php?method=singlemarketdata&marketid=442")
+  dataFrame <- RJSONIO::fromJSON(data)
+  return (dataFrame)
+  
+}
+
+#' ReddCoin to USD
+#'
+#' This function allows you to get general market data on ReddCoin to US Dollars
+#' @param ReddCoin to USD  - Realtime
+#' @keywords ReddCoin
+#' @export
+#' @examples
+#' GeneralMarketData_RDDUSD()
+
+#ReddCoin to US Dollars- Realtime
+
+GeneralMarketData_RDDUSD <- function () {
+  internetcheck <- url.exists("http://pubapi.cryptsy.com", timeout = 10)
+  if( internetcheck != TRUE)
+    stop('Cryptsy or your internet connection is down')
+  data <- getURL("http://pubapi.cryptsy.com/api.php?method=singlemarketdata&marketid=262")
+  dataFrame <- RJSONIO::fromJSON(data)
+  return (dataFrame)
+  
+}
+
+#' Peercoin to USD
+#'
+#' This function allows you to get general market data on Peercoin to US Dollars
+#' @param Peercoin to USD  - Realtime
+#' @keywords Peercoin
+#' @export
+#' @examples
+#' GeneralMarketData_PCCUSD()
+
+#PeerCoin to US Dollars- Realtime
+
+GeneralMarketData_PCCUSD <- function () {
+  internetcheck <- url.exists("http://pubapi.cryptsy.com", timeout = 10)
+  if( internetcheck != TRUE)
+    stop('Cryptsy or your internet connection is down')
+  data <- getURL("http://pubapi.cryptsy.com/api.php?method=singlemarketdata&marketid=305")
+  dataFrame <- RJSONIO::fromJSON(data)
+  return (dataFrame)
+  
+}
+
 #' Dogecoin to Bitcoin
 #'
 #' This function allows you to get general market data on Dogecoin to BITCOIN
@@ -226,6 +289,27 @@ GeneralMarketData_42CBTC <- function () {
   if( internetcheck != TRUE)
     stop('Cryptsy or your internet connection is down')
   data <- getURL("http://pubapi.cryptsy.com/api.php?method=singlemarketdata&marketid=141")
+  dataFrame <- RJSONIO::fromJSON(data)
+  return (dataFrame)
+}
+
+#' Unobtanium to Bitcoin 
+#'
+#' This function allows you to get general market data on Unobtaniumto US Dollars
+#' @param Unobtanium to Bitcoin  - Realtime
+#' @keywords Unobtanium
+#' @export
+#' @examples
+#' GeneralMarketData_UNOBTC()
+
+
+#Unobtanium to Bitcoin - Realtime
+
+GeneralMarketData_UNOBTC <- function () {
+  internetcheck <- url.exists("http://pubapi.cryptsy.com", timeout = 10)
+  if( internetcheck != TRUE)
+    stop('Cryptsy or your internet connection is down')
+  data <- getURL("http://pubapi.cryptsy.com/api.php?method=singlemarketdata&marketid=133")
   dataFrame <- RJSONIO::fromJSON(data)
   return (dataFrame)
 }
@@ -407,48 +491,6 @@ GeneralMarketData_CGBLTC <- function () {
   if( internetcheck != TRUE)
     stop('Cryptsy or your internet connection is down')
   data <- getURL("http://pubapi.cryptsy.com/api.php?method=singlemarketdata&marketid=123")
-  dataFrame <- RJSONIO::fromJSON(data)
-  return (dataFrame)
-}
-
-#' Unobtanium to Bitcoin 
-#'
-#' This function allows you to get general market data on Unobtaniumto US Dollars
-#' @param Unobtanium to Bitcoin  - Realtime
-#' @keywords Unobtanium
-#' @export
-#' @examples
-#' GeneralMarketData_UNOBTC()
-
-
-#Unobtanium to Bitcoin - Realtime
-
-GeneralMarketData_UNOBTC <- function () {
-  internetcheck <- url.exists("http://pubapi.cryptsy.com", timeout = 10)
-  if( internetcheck != TRUE)
-    stop('Cryptsy or your internet connection is down')
-  data <- getURL("http://pubapi.cryptsy.com/api.php?method=singlemarketdata&marketid=133")
-  dataFrame <- RJSONIO::fromJSON(data)
-  return (dataFrame)
-}
-
-#' Ripple to USD
-#'
-#' This function allows you to get general market data on Unobtanium to US Dollars
-#' @param Ripple to USD  - Realtime
-#' @keywords Ripple
-#' @export
-#' @examples
-#' GeneralMarketData_XRPUSD()
-
-
-#Unobtanium to US Dollars- Realtime
-
-GeneralMarketData_UNOBTC <- function () {
-  internetcheck <- url.exists("http://pubapi.cryptsy.com", timeout = 10)
-  if( internetcheck != TRUE)
-    stop('Cryptsy or your internet connection is down')
-  data <- getURL("http://pubapi.cryptsy.com/api.php?method=singlemarketdata&marketid=442")
   dataFrame <- RJSONIO::fromJSON(data)
   return (dataFrame)
 }
