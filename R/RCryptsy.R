@@ -410,3 +410,24 @@ GeneralMarketData_CGBLTC <- function () {
   dataFrame <- RJSONIO::fromJSON(data)
   return (dataFrame)
 }
+
+#' Unobtanium to Bitcoin 
+#'
+#' This function allows you to get general market data on Unobtanium  to US Dollars
+#' @param Unobtanium to Bitcoin  - Realtime
+#' @keywords Unobtanium
+#' @export
+#' @examples
+#' GeneralMarketData_UNOBTC()
+
+
+#Unobtanium to Bitcoin - Realtime
+
+GeneralMarketData_UNOBTC <- function () {
+  internetcheck <- url.exists("http://pubapi.cryptsy.com", timeout = 10)
+  if( internetcheck != TRUE)
+    stop('Cryptsy or your internet connection is down')
+  data <- getURL("http://pubapi.cryptsy.com/api.php?method=singlemarketdata&marketid=133")
+  dataFrame <- RJSONIO::fromJSON(data)
+  return (dataFrame)
+}
