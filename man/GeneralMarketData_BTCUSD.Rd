@@ -6,9 +6,6 @@
 \usage{
 GeneralMarketData_BTCUSD()
 }
-\arguments{
-\item{BITCOIN}{to USD - Realtime}
-}
 \description{
 This function allows you to get general market data on Bitcoin to US Dollars
 }
