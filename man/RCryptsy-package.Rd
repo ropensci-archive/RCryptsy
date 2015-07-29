@@ -12,8 +12,8 @@ Basic Public API for the Crypto-Currency exchange Cryptsy.
 \tabular{ll}{
 Package: \tab RCryptsy\cr
 Type: \tab Package\cr
-Version: \tab 1.0\cr
-Date: \tab 2014-07-05\cr
+Version: \tab 0.4\cr
+Date: \tab 2015-07-28\cr
 License: \tab GPL-3\cr
 }
 This package provides access to the Cryptsy Crypto-Currency Exchange API via R and calls for market data.
