@@ -1,10 +1,10 @@
 #Delay of up to 1 minute returns all markets
 
 GeneralMarketDataAll <- function () {
-  internetcheck <- url.exists("http://pubapi.cryptsy.com", timeout = 10)
+  internetcheck <- url.exists("https://api.cryptsy.com", timeout = 10)
   if( internetcheck != TRUE)
     stop('Cryptsy or your internet connection is down')
-  data <- getURL("http://pubapi.cryptsy.com/api.php?method=marketdatav2 ")
+  data <- getURL("https://api.cryptsy.com/api.php?method=marketdatav2 ")
   dataFrame <- RJSONIO::fromJSON(data)
   return (dataFrame)
 }
@@ -22,10 +22,10 @@ GeneralMarketDataAll <- function () {
 #DOGECOIN to USD - Realtime
 
 GeneralMarketData_DOGEUSD <- function () {
-  internetcheck <- url.exists("http://pubapi.cryptsy.com", timeout = 10)
+  internetcheck <- url.exists("https://api.cryptsy.com", timeout = 10)
   if( internetcheck != TRUE)
     stop('Cryptsy or your internet connection is down')
-  data <- getURL("http://pubapi.cryptsy.com/api.php?method=singlemarketdata&marketid=182")
+  data <- getURL("https://api.cryptsy.com/api/v2/markets/182")
   dataFrame <- RJSONIO::fromJSON(data)
   return (dataFrame)
 }
@@ -42,10 +42,10 @@ GeneralMarketData_DOGEUSD <- function () {
 #BITCOIN to USD - Realtime
 
 GeneralMarketData_BTCUSD <- function () {
-  internetcheck <- url.exists("http://pubapi.cryptsy.com", timeout = 10)
+  internetcheck <- url.exists("https://api.cryptsy.com", timeout = 10)
   if( internetcheck != TRUE)
     stop('Cryptsy or your internet connection is down')
-  data <- getURL("http://pubapi.cryptsy.com/api.php?method=singlemarketdata&marketid=2")
+  data <- getURL("https://api.cryptsy.com/api/v2/markets/2")
   dataFrame <- RJSONIO::fromJSON(data)
   return (dataFrame)
 }
@@ -62,10 +62,10 @@ GeneralMarketData_BTCUSD <- function () {
 #FEATHERCOIN to USD - Realtime
 
 GeneralMarketData_FTCUSD <- function () {
-  internetcheck <- url.exists("http://pubapi.cryptsy.com", timeout = 10)
+  internetcheck <- url.exists("https://api.cryptsy.com", timeout = 10)
   if( internetcheck != TRUE)
     stop('Cryptsy or your internet connection is down')
-  data <- getURL("http://pubapi.cryptsy.com/api.php?method=singlemarketdata&marketid=6")
+  data <- getURL("https://api.cryptsy.com/api/v2/markets/6")
   dataFrame <- RJSONIO::fromJSON(data)
   return (dataFrame)
 }
@@ -82,10 +82,10 @@ GeneralMarketData_FTCUSD <- function () {
 #LITECOIN to USD - Realtime
 
 GeneralMarketData_LTCUSD <- function () {
-  internetcheck <- url.exists("http://pubapi.cryptsy.com", timeout = 10)
+  internetcheck <- url.exists("https://api.cryptsy.com", timeout = 10)
   if( internetcheck != TRUE)
     stop('Cryptsy or your internet connection is down')
-  data <- getURL("http://pubapi.cryptsy.com/api.php?method=singlemarketdata&marketid=1")
+  data <- getURL("https://api.cryptsy.com/api/v2/markets/1")
   dataFrame <- RJSONIO::fromJSON(data)
   return (dataFrame)
 }
@@ -102,10 +102,10 @@ GeneralMarketData_LTCUSD <- function () {
 #DARKCOIN to USD - Realtime
 
 GeneralMarketData_DRKUSD <- function () {
-  internetcheck <- url.exists("http://pubapi.cryptsy.com", timeout = 10)
+  internetcheck <- url.exists("https://api.cryptsy.com", timeout = 10)
   if( internetcheck != TRUE)
     stop('Cryptsy or your internet connection is down')
-  data <- getURL("http://pubapi.cryptsy.com/api.php?method=singlemarketdata&marketid=213")
+  data <- getURL("https://api.cryptsy.com/api/v2/markets/213")
   dataFrame <- RJSONIO::fromJSON(data)
   return (dataFrame)
 }
@@ -122,10 +122,10 @@ GeneralMarketData_DRKUSD <- function () {
 #Ripple to US Dollars- Realtime
 
 GeneralMarketData_XRPUSD <- function () {
-  internetcheck <- url.exists("http://pubapi.cryptsy.com", timeout = 10)
+  internetcheck <- url.exists("https://api.cryptsy.com", timeout = 10)
   if( internetcheck != TRUE)
     stop('Cryptsy or your internet connection is down')
-  data <- getURL("http://pubapi.cryptsy.com/api.php?method=singlemarketdata&marketid=442")
+  data <- getURL("https://api.cryptsy.com/api/v2/markets/442")
   dataFrame <- RJSONIO::fromJSON(data)
   return (dataFrame)
   
@@ -143,10 +143,10 @@ GeneralMarketData_XRPUSD <- function () {
 #ReddCoin to US Dollars- Realtime
 
 GeneralMarketData_RDDUSD <- function () {
-  internetcheck <- url.exists("http://pubapi.cryptsy.com", timeout = 10)
+  internetcheck <- url.exists("https://api.cryptsy.com", timeout = 10)
   if( internetcheck != TRUE)
     stop('Cryptsy or your internet connection is down')
-  data <- getURL("http://pubapi.cryptsy.com/api.php?method=singlemarketdata&marketid=262")
+  data <- getURL("https://api.cryptsy.com/api/v2/markets/262")
   dataFrame <- RJSONIO::fromJSON(data)
   return (dataFrame)
   
@@ -164,10 +164,10 @@ GeneralMarketData_RDDUSD <- function () {
 #PeerCoin to US Dollars- Realtime
 
 GeneralMarketData_PCCUSD <- function () {
-  internetcheck <- url.exists("http://pubapi.cryptsy.com", timeout = 10)
+  internetcheck <- url.exists("https://api.cryptsy.com", timeout = 10)
   if( internetcheck != TRUE)
     stop('Cryptsy or your internet connection is down')
-  data <- getURL("http://pubapi.cryptsy.com/api.php?method=singlemarketdata&marketid=305")
+  data <- getURL("https://api.cryptsy.com/api/v2/markets/305")
   dataFrame <- RJSONIO::fromJSON(data)
   return (dataFrame)
   
@@ -185,10 +185,10 @@ GeneralMarketData_PCCUSD <- function () {
 #DOGECOIN to BITCOIN - Realtime
 
 GeneralMarketData_DOGEBTC <- function () {
-  internetcheck <- url.exists("http://pubapi.cryptsy.com", timeout = 10)
+  internetcheck <- url.exists("https://api.cryptsy.com", timeout = 10)
   if( internetcheck != TRUE)
     stop('Cryptsy or your internet connection is down')
-  data <- getURL("http://pubapi.cryptsy.com/api.php?method=singlemarketdata&marketid=132")
+  data <- getURL("https://api.cryptsy.com/api/v2/markets/132")
   dataFrame <- RJSONIO::fromJSON(data)
   return (dataFrame)
 }
@@ -205,10 +205,10 @@ GeneralMarketData_DOGEBTC <- function () {
 #DARKCOIN to BITCOIN - Realtime
 
 GeneralMarketData_DRKBTC <- function () {
-  internetcheck <- url.exists("http://pubapi.cryptsy.com", timeout = 10)
+  internetcheck <- url.exists("https://api.cryptsy.com", timeout = 10)
   if( internetcheck != TRUE)
     stop('Cryptsy or your internet connection is down')
-  data <- getURL("http://pubapi.cryptsy.com/api.php?method=singlemarketdata&marketid=2")
+  data <- getURL("https://api.cryptsy.com/api/v2/markets/2")
   dataFrame <- RJSONIO::fromJSON(data)
   return (dataFrame)
 }
@@ -225,10 +225,10 @@ GeneralMarketData_DRKBTC <- function () {
 #FEATHERCOIN to BITCOIN - Realtime
 
 GeneralMarketData_FTCBTC <- function () {
-  internetcheck <- url.exists("http://pubapi.cryptsy.com", timeout = 10)
+  internetcheck <- url.exists("https://api.cryptsy.com", timeout = 10)
   if( internetcheck != TRUE)
     stop('Cryptsy or your internet connection is down')
-  data <- getURL("http://pubapi.cryptsy.com/api.php?method=singlemarketdata&marketid=5")
+  data <- getURL("https://api.cryptsy.com/api/v2/markets/5")
   dataFrame <- RJSONIO::fromJSON(data)
   return (dataFrame)
 }
@@ -245,10 +245,10 @@ GeneralMarketData_FTCBTC <- function () {
 #LITECOIN to BITCOIN - Realtime
 
 GeneralMarketData_LTCBTC <- function () {
-  internetcheck <- url.exists("http://pubapi.cryptsy.com", timeout = 10)
+  internetcheck <- url.exists("https://api.cryptsy.com", timeout = 10)
   if( internetcheck != TRUE)
     stop('Cryptsy or your internet connection is down')
-  data <- getURL("http://pubapi.cryptsy.com/api.php?method=singlemarketdata&marketid=3")
+  data <- getURL("https://api.cryptsy.com/api/v2/markets/3")
   dataFrame <- RJSONIO::fromJSON(data)
   return (dataFrame)
 }
@@ -265,10 +265,10 @@ GeneralMarketData_LTCBTC <- function () {
 #NXTCOIN to BITCOIN - Realtime
 
 GeneralMarketData_NXTBTC <- function () {
-  internetcheck <- url.exists("http://pubapi.cryptsy.com", timeout = 10)
+  internetcheck <- url.exists("https://api.cryptsy.com", timeout = 10)
   if( internetcheck != TRUE)
     stop('Cryptsy or your internet connection is down')
-  data <- getURL("http://pubapi.cryptsy.com/api.php?method=singlemarketdata&marketid=159")
+  data <- getURL("https://api.cryptsy.com/api/v2/markets/159")
   dataFrame <- RJSONIO::fromJSON(data)
   return (dataFrame)
 }
@@ -285,10 +285,10 @@ GeneralMarketData_NXTBTC <- function () {
 #42COIN to BITCOIN - Realtime
 
 GeneralMarketData_42CBTC <- function () {
-  internetcheck <- url.exists("http://pubapi.cryptsy.com", timeout = 10)
+  internetcheck <- url.exists("https://api.cryptsy.com", timeout = 10)
   if( internetcheck != TRUE)
     stop('Cryptsy or your internet connection is down')
-  data <- getURL("http://pubapi.cryptsy.com/api.php?method=singlemarketdata&marketid=141")
+  data <- getURL("https://api.cryptsy.com/api/v2/markets/141")
   dataFrame <- RJSONIO::fromJSON(data)
   return (dataFrame)
 }
@@ -306,10 +306,10 @@ GeneralMarketData_42CBTC <- function () {
 #Unobtanium to Bitcoin - Realtime
 
 GeneralMarketData_UNOBTC <- function () {
-  internetcheck <- url.exists("http://pubapi.cryptsy.com", timeout = 10)
+  internetcheck <- url.exists("https://api.cryptsy.com", timeout = 10)
   if( internetcheck != TRUE)
     stop('Cryptsy or your internet connection is down')
-  data <- getURL("http://pubapi.cryptsy.com/api.php?method=singlemarketdata&marketid=133")
+  data <- getURL("https://api.cryptsy.com/api/v2/markets/133")
   dataFrame <- RJSONIO::fromJSON(data)
   return (dataFrame)
 }
@@ -326,10 +326,10 @@ GeneralMarketData_UNOBTC <- function () {
 #DOGECOIN to LITECOIN - Realtime
 
 GeneralMarketData_DOGELTC <- function () {
-  internetcheck <- url.exists("http://pubapi.cryptsy.com", timeout = 10)
+  internetcheck <- url.exists("https://api.cryptsy.com", timeout = 10)
   if( internetcheck != TRUE)
     stop('Cryptsy or your internet connection is down')
-  data <- getURL("http://pubapi.cryptsy.com/api.php?method=singlemarketdata&marketid=135")
+  data <- getURL("https://api.cryptsy.com/api/v2/markets/135")
   dataFrame <- RJSONIO::fromJSON(data)
   return (dataFrame)
 }
@@ -346,10 +346,10 @@ GeneralMarketData_DOGELTC <- function () {
 #AndroidsTokensV2 to LITECOIN - Realtime
 
 GeneralMarketData_ADTLTC <- function () {
-  internetcheck <- url.exists("http://pubapi.cryptsy.com", timeout = 10)
+  internetcheck <- url.exists("https://api.cryptsy.com", timeout = 10)
   if( internetcheck != TRUE)
     stop('Cryptsy or your internet connection is down')
-  data <- getURL("http://pubapi.cryptsy.com/api.php?method=singlemarketdata&marketid=94")
+  data <- getURL("https://api.cryptsy.com/api/v2/markets/94")
   dataFrame <- RJSONIO::fromJSON(data)
   return (dataFrame)
 }
@@ -366,10 +366,10 @@ GeneralMarketData_ADTLTC <- function () {
 #AnonCoin to LITECOIN - Realtime
 
 GeneralMarketData_ANCLTC <- function () {
-  internetcheck <- url.exists("http://pubapi.cryptsy.com", timeout = 10)
+  internetcheck <- url.exists("https://api.cryptsy.com", timeout = 10)
   if( internetcheck != TRUE)
     stop('Cryptsy or your internet connection is down')
-  data <- getURL("http://pubapi.cryptsy.com/api.php?method=singlemarketdata&marketid=121")
+  data <- getURL("https://api.cryptsy.com/api/v2/markets/121")
   dataFrame <- RJSONIO::fromJSON(data)
   return (dataFrame)
 }
@@ -386,10 +386,10 @@ GeneralMarketData_ANCLTC <- function () {
 #AsicCoin  to LITECOIN - Realtime
 
 GeneralMarketData_ASCLTC <- function () {
-  internetcheck <- url.exists("http://pubapi.cryptsy.com", timeout = 10)
+  internetcheck <- url.exists("https://api.cryptsy.com", timeout = 10)
   if( internetcheck != TRUE)
     stop('Cryptsy or your internet connection is down')
-  data <- getURL("http://pubapi.cryptsy.com/api.php?method=singlemarketdata&marketid=111")
+  data <- getURL("https://api.cryptsy.com/api/v2/markets/111")
   dataFrame <- RJSONIO::fromJSON(data)
   return (dataFrame)
 }
@@ -406,10 +406,10 @@ GeneralMarketData_ASCLTC <- function () {
 #AuroraCoin  to LITECOIN - Realtime
 
 GeneralMarketData_AURLTC <- function () {
-  internetcheck <- url.exists("http://pubapi.cryptsy.com", timeout = 10)
+  internetcheck <- url.exists("https://api.cryptsy.com", timeout = 10)
   if( internetcheck != TRUE)
     stop('Cryptsy or your internet connection is down')
-  data <- getURL("http://pubapi.cryptsy.com/api.php?method=singlemarketdata&marketid=161")
+  data <- getURL("https://api.cryptsy.com/api/v2/markets/161")
   dataFrame <- RJSONIO::fromJSON(data)
   return (dataFrame)
 }
@@ -426,10 +426,10 @@ GeneralMarketData_AURLTC <- function () {
 #BatCoin to LITECOIN - Realtime
 
 GeneralMarketData_BATLTC <- function () {
-  internetcheck <- url.exists("http://pubapi.cryptsy.com", timeout = 10)
+  internetcheck <- url.exists("https://api.cryptsy.com", timeout = 10)
   if( internetcheck != TRUE)
     stop('Cryptsy or your internet connection is down')
-  data <- getURL("http://pubapi.cryptsy.com/api.php?method=singlemarketdata&marketid=186")
+  data <- getURL("https://api.cryptsy.com/api/v2/markets/186")
   dataFrame <- RJSONIO::fromJSON(data)
   return (dataFrame)
 }
@@ -446,10 +446,10 @@ GeneralMarketData_BATLTC <- function () {
 #BlackCoin  to LITECOIN - Realtime
 
 GeneralMarketData_BCLTC <- function () {
-  internetcheck <- url.exists("http://pubapi.cryptsy.com", timeout = 10)
+  internetcheck <- url.exists("https://api.cryptsy.com", timeout = 10)
   if( internetcheck != TRUE)
     stop('Cryptsy or your internet connection is down')
-  data <- getURL("http://pubapi.cryptsy.com/api.php?method=singlemarketdata&marketid=191")
+  data <- getURL("https://api.cryptsy.com/api/v2/markets/191")
   dataFrame <- RJSONIO::fromJSON(data)
   return (dataFrame)
 }
@@ -467,10 +467,10 @@ GeneralMarketData_BCLTC <- function () {
 #CAIx  to LITECOIN - Realtime
 
 GeneralMarketData_CAIxLTC <- function () {
-  internetcheck <- url.exists("http://pubapi.cryptsy.com", timeout = 10)
+  internetcheck <- url.exists("https://api.cryptsy.com", timeout = 10)
   if( internetcheck != TRUE)
     stop('Cryptsy or your internet connection is down')
-  data <- getURL("http://pubapi.cryptsy.com/api.php?method=singlemarketdata&marketid=222")
+  data <- getURL("https://api.cryptsy.com/api/v2/markets/222")
   dataFrame <- RJSONIO::fromJSON(data)
   return (dataFrame)
 }
@@ -487,10 +487,10 @@ GeneralMarketData_CAIxLTC <- function () {
 #CryptogenicBullion  to LITECOIN - Realtime
 
 GeneralMarketData_CGBLTC <- function () {
-  internetcheck <- url.exists("http://pubapi.cryptsy.com", timeout = 10)
+  internetcheck <- url.exists("https://api.cryptsy.com", timeout = 10)
   if( internetcheck != TRUE)
     stop('Cryptsy or your internet connection is down')
-  data <- getURL("http://pubapi.cryptsy.com/api.php?method=singlemarketdata&marketid=123")
+  data <- getURL("https://api.cryptsy.com/api/v2/markets/123")
   dataFrame <- RJSONIO::fromJSON(data)
   return (dataFrame)
 }
